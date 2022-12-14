@@ -9,14 +9,6 @@ class Employee:
     def email(self):
         return f'{self.first}.{self.last}@email.com'
 
-    @email.setter
-    def email(self):
-        self.email 
-
-    @email.deleter
-    def email(self):
-        del self.email
-
     @property
     def fullname(self):
         return f'{self.first} {self.last}'
