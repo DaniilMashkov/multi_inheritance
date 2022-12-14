@@ -15,13 +15,11 @@ class Employee:
 
     @fullname.setter
     def fullname(self, value):
-        self.first = value.split(' ')[0] 
-        self.last = value.split(' ')[1] 
+        self.first, self.last = value.split(' ')
 
     @fullname.deleter
     def fullname(self):
-        self.first = None
-        self.last = None
+        self.first, self.last  = None, None
 
 
 emp_1 = Employee('John', 'Smith')
